@@ -11,6 +11,7 @@ import errorHandler from './middleware/error';
 import { login, logout } from './handlers/auth';
 import { getLoansByUserEmail, getLoans, deleteLoan, getExpiredLoans } from './handlers/loans';
 import { admin, AuthMetadata, staff, superAdmin } from './middleware/auth';
+import cors from 'cors';
 
 //For env File
 dotenv.config();
@@ -20,8 +21,9 @@ const port = process.env.PORT;
 
 app.use(bodyParser.urlencoded({
   extended: true
-}))
-app.use(bodyParser.json())
+}));
+app.use(bodyParser.json());
+app.use(cors());
 
 app.post('/login', login);
 
