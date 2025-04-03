@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import logger from '../logger';
 
 export enum Role {
   SUPERADMIN = 'SUPERADMIN',
@@ -90,11 +91,10 @@ function verifyToken(token: string, roleSecretKey: string, req: Request, res: Re
   jwt.verify(token, roleSecretKey, function (err, decoded: any) {
 
     if (err) {
-      console.log(err);
+      logger.error(err.message);
     }
 
     if (decoded) {
-      console.log("decoded", decoded);
       let authMetaData: AuthMetadata = {
         sub: decoded.sub,
         role: decoded.role
