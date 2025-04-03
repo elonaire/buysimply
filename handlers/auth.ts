@@ -55,7 +55,7 @@ export function login(req: Request, res: Response, next: NextFunction) {
 
 export function logout(req: Request, res: Response, next: NextFunction) {
   try {
-    res.clearCookie('refresh_token');
+    res.clearCookie('refreshToken');
     res.json({ message: 'Logout successful' });
   } catch (error) {
     next(error);

@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 import errorHandler from './middleware/error';
 import { login, logout } from './handlers/auth';
 import { getLoansByUserEmail, getLoans, deleteLoan, getExpiredLoans } from './handlers/loans';
-import { admin, AuthMetadata, staff, superAdmin } from './middleware/auth';
+import { admin, AuthMetadata, checkRefreshTokenCookie, staff, superAdmin } from './middleware/auth';
 import cors from 'cors';
 
 //For env File
@@ -27,18 +27,20 @@ app.use(cors());
 
 app.post('/login', login);
 
-app.get('/logout', superAdmin, admin, staff, logout);
+app.get('/logout', checkRefreshTokenCookie, superAdmin, admin, staff, logout);
 
-app.get('/loans', superAdmin, admin, staff, getLoans);
+app.get('/loans', checkRefreshTokenCookie, superAdmin, admin, staff, getLoans);
 
-app.get('/loans/:userEmail/get', superAdmin, admin, staff, getLoansByUserEmail);
+app.get('/loans/:userEmail/get', checkRefreshTokenCookie, superAdmin, admin, staff, getLoansByUserEmail);
 
-app.get('/loans/expired', superAdmin, admin, staff, getExpiredLoans);
+app.get('/loans/expired', checkRefreshTokenCookie, superAdmin, admin, staff, getExpiredLoans);
 
-app.delete('/loan/:loanId/delete', superAdmin, deleteLoan);
+app.delete('/loan/:loanId/delete', checkRefreshTokenCookie, superAdmin, deleteLoan);
 
 app.use(errorHandler);
 
 app.listen(port, () => {
   console.log(`Server is listening at https://localhost:${port}`);
 });
+
+export default app;

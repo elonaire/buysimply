@@ -25,25 +25,29 @@ type LoanQueryParams = {
 const loansData: Loan[] = loansJson;
 
 export function getLoans(req: Request, res: Response, next: NextFunction) {
-  let query = req.query as LoanQueryParams;
+  try {
+    let query = req.query as LoanQueryParams;
 
-  if (!req.authMetadata) {
-    throw new Error("Unauthorized");
+    if (!req.authMetadata) {
+      throw new Error("Unauthorized");
+    }
+
+    let loans = loansData;
+
+    if (req.authMetadata.role == Role.STAFF) {
+      // filter out totalLoan field
+      loans.forEach((loan) => {
+        delete loan.applicant.totalLoan;
+      });
+    }
+
+    if (query.status) {
+      loans = loans.filter((loan) => query.status?.includes(loan.status));
+    }
+    res.json({ loans });
+  } catch (error) {
+    next(error);
   }
-
-  let loans = loansData;
-
-  if (req.authMetadata.role == Role.STAFF) {
-    // filter out totalLoan field
-    loans.forEach((loan) => {
-      delete loan.applicant.totalLoan;
-    });
-  }
-
-  if (query.status) {
-    loans = loans.filter((loan) => query.status?.includes(loan.status));
-  }
-  res.json({ loans });
 }
 
 export function getLoansByUserEmail(req: Request, res: Response, next: NextFunction) {

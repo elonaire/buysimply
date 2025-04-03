@@ -1,0 +1,31 @@
+2025-04-03 18:47:49 [ERROR]: invalid signature
+2025-04-03 18:47:49 [ERROR]: invalid signature
+2025-04-03 18:47:49 [ERROR]: jwt expired
+2025-04-03 18:47:49 [ERROR]: Unauthorized
+2025-04-03 18:47:49 [DEBUG]: res.statusCode
+2025-04-03 19:01:49 [ERROR]: Unauthorized
+2025-04-03 19:01:49 [DEBUG]: res.statusCode
+2025-04-03 19:01:49 [ERROR]: Unauthorized
+2025-04-03 19:01:49 [DEBUG]: res.statusCode
+2025-04-03 19:01:49 [ERROR]: Unauthorized
+2025-04-03 19:01:49 [DEBUG]: res.statusCode
+2025-04-03 19:01:49 [ERROR]: Unauthorized
+2025-04-03 19:01:49 [DEBUG]: res.statusCode
+2025-04-03 19:02:44 [ERROR]: Unauthorized
+2025-04-03 19:02:44 [DEBUG]: res.statusCode
+2025-04-03 19:17:29 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:17:29 [DEBUG]: res.statusCode
+2025-04-03 19:18:57 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:18:57 [DEBUG]: res.statusCode
+2025-04-03 19:20:01 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:20:01 [DEBUG]: res.statusCode
+2025-04-03 19:22:53 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:22:53 [DEBUG]: res.statusCode
+2025-04-03 19:25:52 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:25:52 [DEBUG]: res.statusCode
+2025-04-03 19:28:38 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:28:38 [DEBUG]: res.statusCode
+2025-04-03 19:28:57 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:28:57 [DEBUG]: res.statusCode
+2025-04-03 19:30:20 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
+2025-04-03 19:30:20 [DEBUG]: res.statusCode

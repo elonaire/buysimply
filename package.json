@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon index.ts"
@@ -33,5 +33,19 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "winston": "^3.17.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts"
+    ]
   }
 }
