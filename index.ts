@@ -4,7 +4,7 @@ declare module 'express' {
   }
 }
 
-import express, { Express, Request, Response, Application } from 'express';
+import express, { Application } from 'express';
 import dotenv from 'dotenv';
 import bodyParser from 'body-parser';
 import errorHandler from './middleware/error';

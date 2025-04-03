@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import jwt, { JwtPayload, VerifyErrors } from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 
 export enum Role {
   SUPERADMIN = 'SUPERADMIN',
