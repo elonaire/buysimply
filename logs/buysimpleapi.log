@@ -29,3 +29,49 @@
 2025-04-03 19:28:57 [DEBUG]: res.statusCode
 2025-04-03 19:30:20 [ERROR]: Cannot read properties of undefined (reading 'STAFF')
 2025-04-03 19:30:20 [DEBUG]: res.statusCode
+2025-04-03 19:45:08 [ERROR]: Cannot read properties of undefined (reading 'refreshToken')
+2025-04-03 19:45:08 [DEBUG]: res.statusCode
+2025-04-03 19:51:52 [ERROR]: Cannot read properties of undefined (reading 'refreshToken')
+2025-04-03 19:51:52 [DEBUG]: res.statusCode
+2025-04-03 21:18:19 [ERROR]: Cannot read properties of undefined (reading 'refreshToken')
+2025-04-03 21:18:19 [DEBUG]: res.statusCode
+2025-04-03 21:23:27 [ERROR]: invalid signature
+2025-04-03 21:23:27 [ERROR]: invalid signature
+2025-04-03 21:23:27 [ERROR]: jwt expired
+2025-04-03 21:23:27 [ERROR]: Unauthorized
+2025-04-03 21:23:27 [DEBUG]: res.statusCode
+2025-04-03 21:24:24 [ERROR]: invalid signature
+2025-04-03 21:24:24 [ERROR]: invalid signature
+2025-04-03 21:26:03 [ERROR]: invalid signature
+2025-04-03 21:26:03 [ERROR]: invalid signature
+2025-04-03 21:26:04 [ERROR]: invalid signature
+2025-04-03 21:26:04 [ERROR]: invalid signature
+2025-04-03 21:28:03 [ERROR]: invalid signature
+2025-04-03 21:28:03 [ERROR]: invalid signature
+2025-04-03 21:30:30 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:30:30 [ERROR]: Cannot read properties of undefined (reading 'refreshToken')
+2025-04-03 21:30:30 [DEBUG]: res.statusCode
+2025-04-03 21:36:50 [INFO]: Processing request: GET /loans?status=active {"status":"active"}
+2025-04-03 21:36:50 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:36:50 [ERROR]: invalid signature
+2025-04-03 21:36:50 [ERROR]: invalid signature
+2025-04-03 21:36:50 [ERROR]: jwt expired
+2025-04-03 21:36:50 [ERROR]: Unauthorized
+2025-04-03 21:36:50 [DEBUG]: res.statusCode
+2025-04-03 21:36:50 [INFO]: Response sent: 200
+2025-04-03 21:41:31 [INFO]: Processing request: [f4c862da-5721-44f8-9bee-30c19dc1fb96] GET /loans?status=active {"status":"active"}
+2025-04-03 21:41:31 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:41:31 [ERROR]: invalid signature
+2025-04-03 21:41:31 [ERROR]: invalid signature
+2025-04-03 21:41:31 [ERROR]: jwt expired
+2025-04-03 21:41:31 [ERROR]: Unauthorized
+2025-04-03 21:41:31 [DEBUG]: res.statusCode
+2025-04-03 21:41:31 [INFO]: Processed request: f4c862da-5721-44f8-9bee-30c19dc1fb96 200
+2025-04-03 21:41:57 [INFO]: Processing request: [5a407eb3-b2d5-42fe-b725-ba640145f99a] GET /loans?status=active {"status":"active"}
+2025-04-03 21:41:58 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:41:58 [ERROR]: invalid signature
+2025-04-03 21:41:58 [ERROR]: invalid signature
+2025-04-03 21:41:58 [ERROR]: jwt expired
+2025-04-03 21:41:58 [ERROR]: Unauthorized
+2025-04-03 21:41:58 [DEBUG]: res.statusCode
+2025-04-03 21:41:58 [INFO]: Processed request: 5a407eb3-b2d5-42fe-b725-ba640145f99a STATUS:200

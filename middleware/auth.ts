@@ -15,7 +15,8 @@ export type AuthMetadata = {
 
 export function checkRefreshTokenCookie(req: Request, res: Response, next: NextFunction) {
   try {
-    const token = req.cookies['refreshToken'];
+    logger.debug("Checking refresh token cookie", req.cookies);
+    const token = req.cookies.refreshToken;
     if (!token) {
       res.statusCode = 401;
       throw new Error('Unauthorized')
@@ -105,4 +106,17 @@ function verifyToken(token: string, roleSecretKey: string, req: Request, res: Re
 
     next();
   });
+}
+
+export function postVerification(req: Request, res: Response, next: NextFunction) {
+  try {
+    if (req.authMetadata) {
+      next();
+    } else {
+
+    }
+
+  } catch (error) {
+    next(error);
+  }
 }
