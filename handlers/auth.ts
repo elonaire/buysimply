@@ -16,7 +16,7 @@ type Staff = {
 };
 
 type LoginResponse = {
-  access_token: string;
+  accessToken: string;
 };
 
 const staffData = staffJson as Staff[];
@@ -36,18 +36,17 @@ export function login(req: Request, res: Response, next: NextFunction) {
     let roleSecretKey = process.env[`${roleUpperCase}_SECRET`];
 
     if (!roleSecretKey) {
-      res.statusCode = 500;
       throw new Error('Server Error');
     }
 
-    let access_token = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '5min' });
-    let refresh_token = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '7d' });
+    let accessToken = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '5min' });
+    let refreshToken = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '7d' });
 
     // set refresh token in cookie
-    res.cookie('refresh_token', refresh_token, { httpOnly: true, secure: true });
+    res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true });
 
     res.json({
-      access_token,
+      accessToken,
     } as LoginResponse);
   } catch (error) {
     next(error);
