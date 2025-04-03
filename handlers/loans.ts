@@ -1,11 +1,12 @@
 import { NextFunction, Request, Response } from 'express';
 import loansJson from '../data/loans.json';
+import { AuthMetadata, Role } from '../middleware/auth';
 
 type Applicant = {
   name: string;
   email: string;
   telephone: string;
-  totalLoan: string;
+  totalLoan?: string;
 };
 
 type Loan = {
@@ -26,7 +27,18 @@ const loansData: Loan[] = loansJson;
 export function getLoans(req: Request, res: Response, next: NextFunction) {
   let query = req.query as LoanQueryParams;
 
+  if (!req.authMetadata) {
+    throw new Error("Unauthorized");
+  }
+
   let loans = loansData;
+
+  if (req.authMetadata.role == Role.STAFF) {
+    // filter out totalLoan field
+    loans.forEach((loan) => {
+      delete loan.applicant.totalLoan;
+    });
+  }
 
   if (query.status) {
     loans = loans.filter((loan) => query.status?.includes(loan.status));

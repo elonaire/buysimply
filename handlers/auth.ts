@@ -39,8 +39,8 @@ export function login(req: Request, res: Response, next: NextFunction) {
       throw new Error('Server Error');
     }
 
-    let accessToken = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '5min' });
-    let refreshToken = jwt.sign({ sub: staff.id, }, roleSecretKey, { expiresIn: '7d' });
+    let accessToken = jwt.sign({ sub: staff.id, role: roleUpperCase }, roleSecretKey, { expiresIn: '5min' });
+    let refreshToken = jwt.sign({ sub: staff.id, role: roleUpperCase }, roleSecretKey, { expiresIn: '7d' });
 
     // set refresh token in cookie
     res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true });
