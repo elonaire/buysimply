@@ -75,3 +75,291 @@
 2025-04-03 21:41:58 [ERROR]: Unauthorized
 2025-04-03 21:41:58 [DEBUG]: res.statusCode
 2025-04-03 21:41:58 [INFO]: Processed request: 5a407eb3-b2d5-42fe-b725-ba640145f99a STATUS:200
+2025-04-03 21:44:08 [INFO]: Processing request: [581341d3-e1fc-4d37-917d-8289b65277be] DELETE /loan/570321/delete {}
+2025-04-03 21:44:08 [ERROR]: Unauthorized
+2025-04-03 21:44:08 [DEBUG]: res.statusCode
+2025-04-03 21:44:08 [INFO]: Processed request: 581341d3-e1fc-4d37-917d-8289b65277be STATUS:401
+2025-04-03 21:44:13 [INFO]: Processing request: [f3697071-f9a6-4e9f-ba06-d6b46f6acfe2] POST /login {}
+2025-04-03 21:44:13 [INFO]: Processed request: f3697071-f9a6-4e9f-ba06-d6b46f6acfe2 STATUS:200
+2025-04-03 21:44:16 [INFO]: Processing request: [41642260-e9d6-4158-a524-bbac9b4b1208] DELETE /loan/570321/delete {}
+2025-04-03 21:44:16 [ERROR]: Unauthorized
+2025-04-03 21:44:16 [DEBUG]: res.statusCode
+2025-04-03 21:44:16 [INFO]: Processed request: 41642260-e9d6-4158-a524-bbac9b4b1208 STATUS:401
+2025-04-03 21:44:22 [INFO]: Processing request: [11e141b0-ac84-4ca9-b1fd-8054068c0a41] GET /loans?status=active {"status":"active"}
+2025-04-03 21:44:22 [ERROR]: invalid signature
+2025-04-03 21:44:22 [ERROR]: invalid signature
+2025-04-03 21:44:22 [INFO]: Processed request: 11e141b0-ac84-4ca9-b1fd-8054068c0a41 STATUS:200
+2025-04-03 21:44:39 [INFO]: Processing request: [000a8914-1440-4afb-be1b-1f4a20855f31] GET /loans {}
+2025-04-03 21:44:39 [ERROR]: invalid signature
+2025-04-03 21:44:39 [ERROR]: invalid signature
+2025-04-03 21:44:39 [INFO]: Processed request: 000a8914-1440-4afb-be1b-1f4a20855f31 STATUS:200
+2025-04-03 21:44:54 [INFO]: Processing request: [7b2f74b1-2b68-4432-9e88-629ba1eeed54] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 21:44:54 [ERROR]: invalid signature
+2025-04-03 21:44:54 [ERROR]: invalid signature
+2025-04-03 21:44:54 [INFO]: Processed request: 7b2f74b1-2b68-4432-9e88-629ba1eeed54 STATUS:200
+2025-04-03 21:54:52 [INFO]: Processing request: [cf4f561f-8fd0-4114-8754-c5130ea8fb65] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 21:54:53 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:54:53 [ERROR]: invalid signature
+2025-04-03 21:54:53 [ERROR]: invalid signature
+2025-04-03 21:54:53 [ERROR]: jwt expired
+2025-04-03 21:54:53 [ERROR]: Unauthorized
+2025-04-03 21:54:53 [DEBUG]: res.statusCode
+2025-04-03 21:54:53 [INFO]: Processed request: cf4f561f-8fd0-4114-8754-c5130ea8fb65 STATUS:200
+2025-04-03 21:57:20 [INFO]: Processing request: [7a38d062-37e2-4519-bb83-68b10a3d2cbf] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 21:57:20 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:57:20 [ERROR]: invalid signature
+2025-04-03 21:57:20 [ERROR]: invalid signature
+2025-04-03 21:57:20 [ERROR]: jwt expired
+2025-04-03 21:57:20 [ERROR]: Unauthorized
+2025-04-03 21:57:20 [DEBUG]: res.statusCode
+2025-04-03 21:57:20 [INFO]: Processed request: 7a38d062-37e2-4519-bb83-68b10a3d2cbf STATUS:200
+2025-04-03 21:59:04 [INFO]: Processing request: [cc164cfa-a459-43c9-b5db-becad18190cc] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 21:59:04 [DEBUG]: Checking refresh token cookie
+2025-04-03 21:59:04 [ERROR]: invalid signature
+2025-04-03 21:59:04 [ERROR]: invalid signature
+2025-04-03 21:59:04 [ERROR]: jwt expired
+2025-04-03 21:59:04 [ERROR]: Unauthorized
+2025-04-03 21:59:04 [DEBUG]: res.statusCode
+2025-04-03 21:59:04 [INFO]: Processed request: cc164cfa-a459-43c9-b5db-becad18190cc STATUS:200
+2025-04-03 22:11:32 [INFO]: Processing request: [b3fe83a0-440c-4ae1-b0a5-36832f26772e] POST /login {}
+2025-04-03 22:11:32 [INFO]: Processed request: b3fe83a0-440c-4ae1-b0a5-36832f26772e STATUS:200
+2025-04-03 22:12:28 [INFO]: Processing request: [3125453d-a343-4d97-ba03-e8be3d38c0be] POST /login {}
+2025-04-03 22:12:28 [INFO]: Processed request: 3125453d-a343-4d97-ba03-e8be3d38c0be STATUS:200
+2025-04-03 22:12:58 [INFO]: Processing request: [9d23287f-5655-42ca-92fb-39e8ee3f6ba0] POST /login {}
+2025-04-03 22:12:58 [INFO]: Processed request: 9d23287f-5655-42ca-92fb-39e8ee3f6ba0 STATUS:200
+2025-04-03 22:14:46 [INFO]: Processing request: [1484f6ce-9640-47a1-be01-e344cc6aa794] POST /login {}
+2025-04-03 22:14:46 [INFO]: Processed request: 1484f6ce-9640-47a1-be01-e344cc6aa794 STATUS:200
+2025-04-03 22:15:04 [INFO]: Processing request: [1b0369ae-2931-48c3-92d3-756cd964e495] POST /login {}
+2025-04-03 22:15:04 [INFO]: Processed request: 1b0369ae-2931-48c3-92d3-756cd964e495 STATUS:200
+2025-04-03 22:15:26 [INFO]: Processing request: [f17a38dd-f712-4a3e-b60c-b3b0534508dc] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:15:26 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:15:26 [ERROR]: invalid signature
+2025-04-03 22:15:26 [ERROR]: invalid signature
+2025-04-03 22:15:26 [INFO]: Processed request: f17a38dd-f712-4a3e-b60c-b3b0534508dc STATUS:200
+2025-04-03 22:16:18 [INFO]: Processing request: [0fed800d-cc97-4a11-b6d0-aa15590676f2] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:16:18 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:16:18 [ERROR]: invalid signature
+2025-04-03 22:16:18 [ERROR]: invalid signature
+2025-04-03 22:16:18 [INFO]: Processed request: 0fed800d-cc97-4a11-b6d0-aa15590676f2 STATUS:200
+2025-04-03 22:17:09 [INFO]: Processing request: [b2c00990-7e58-4ae1-95fe-ee6354fdffd0] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:17:09 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:17:09 [ERROR]: invalid signature
+2025-04-03 22:17:09 [ERROR]: invalid signature
+2025-04-03 22:17:09 [INFO]: Processed request: b2c00990-7e58-4ae1-95fe-ee6354fdffd0 STATUS:200
+2025-04-03 22:20:12 [INFO]: Processing request: [c3a9094e-ff11-44f9-afff-d3736e342951] POST /login {}
+2025-04-03 22:20:12 [INFO]: Processed request: c3a9094e-ff11-44f9-afff-d3736e342951 STATUS:200
+2025-04-03 22:20:29 [INFO]: Processing request: [6712ede8-5d23-4ab1-a94c-665d511f8cb9] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:20:29 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:20:29 [ERROR]: invalid signature
+2025-04-03 22:20:29 [ERROR]: invalid signature
+2025-04-03 22:20:29 [INFO]: Processed request: 6712ede8-5d23-4ab1-a94c-665d511f8cb9 STATUS:200
+2025-04-03 22:20:35 [INFO]: Processing request: [af814f23-c0c6-421a-a6f1-45f5711258c3] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:20:35 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:20:35 [ERROR]: invalid signature
+2025-04-03 22:20:35 [ERROR]: invalid signature
+2025-04-03 22:20:35 [INFO]: Processed request: af814f23-c0c6-421a-a6f1-45f5711258c3 STATUS:200
+2025-04-03 22:22:18 [INFO]: Processing request: [31432c9a-b86d-497f-87d3-fe944be0384b] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:22:18 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:22:18 [ERROR]: invalid signature
+2025-04-03 22:22:18 [ERROR]: invalid signature
+2025-04-03 22:22:18 [INFO]: Processed request: 31432c9a-b86d-497f-87d3-fe944be0384b STATUS:200
+2025-04-03 22:22:33 [INFO]: Processing request: [fb8236dc-d340-423e-8602-e41186ad7f2a] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:22:33 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:22:33 [ERROR]: invalid signature
+2025-04-03 22:22:33 [ERROR]: invalid signature
+2025-04-03 22:22:33 [INFO]: Processed request: fb8236dc-d340-423e-8602-e41186ad7f2a STATUS:200
+2025-04-03 22:23:08 [INFO]: Processing request: [6beed4f7-4167-440c-8381-1e300771652e] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:23:08 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:23:08 [ERROR]: invalid signature
+2025-04-03 22:23:08 [ERROR]: invalid signature
+2025-04-03 22:23:09 [INFO]: Processed request: 6beed4f7-4167-440c-8381-1e300771652e STATUS:200
+2025-04-03 22:24:17 [INFO]: Processing request: [930987f7-0133-4c56-9fce-9bb84eaa7070] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:24:17 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:24:17 [ERROR]: invalid signature
+2025-04-03 22:24:17 [ERROR]: invalid signature
+2025-04-03 22:24:17 [INFO]: Processed request: 930987f7-0133-4c56-9fce-9bb84eaa7070 STATUS:200
+2025-04-03 22:26:59 [INFO]: Processing request: [c700759f-658b-4096-9a16-99efc2a9105e] GET /logout {}
+2025-04-03 22:26:59 [ERROR]: invalid signature
+2025-04-03 22:26:59 [ERROR]: invalid signature
+2025-04-03 22:26:59 [ERROR]: jwt expired
+2025-04-03 22:26:59 [INFO]: Processed request: c700759f-658b-4096-9a16-99efc2a9105e STATUS:200
+2025-04-03 22:27:04 [INFO]: Processing request: [71dc11e9-a0c7-47a5-8ab5-54285a44648c] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:04 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:04 [ERROR]: invalid signature
+2025-04-03 22:27:04 [ERROR]: invalid signature
+2025-04-03 22:27:04 [ERROR]: jwt expired
+2025-04-03 22:27:04 [ERROR]: Unauthorized
+2025-04-03 22:27:04 [DEBUG]: res.statusCode
+2025-04-03 22:27:04 [INFO]: Processed request: 71dc11e9-a0c7-47a5-8ab5-54285a44648c STATUS:200
+2025-04-03 22:27:08 [INFO]: Processing request: [0aedbf09-7a86-4809-b0a6-26bdf44d0bb1] POST /login {}
+2025-04-03 22:27:08 [INFO]: Processed request: 0aedbf09-7a86-4809-b0a6-26bdf44d0bb1 STATUS:200
+2025-04-03 22:27:11 [INFO]: Processing request: [c7d8c29b-7a54-460b-bb12-155d75646f04] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:11 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:11 [ERROR]: invalid signature
+2025-04-03 22:27:11 [ERROR]: invalid signature
+2025-04-03 22:27:11 [INFO]: Processed request: c7d8c29b-7a54-460b-bb12-155d75646f04 STATUS:200
+2025-04-03 22:27:14 [INFO]: Processing request: [0b2f3f86-23ce-4d85-9bff-66bde15674a8] GET /logout {}
+2025-04-03 22:27:14 [ERROR]: invalid signature
+2025-04-03 22:27:14 [ERROR]: invalid signature
+2025-04-03 22:27:14 [INFO]: Processed request: 0b2f3f86-23ce-4d85-9bff-66bde15674a8 STATUS:200
+2025-04-03 22:27:17 [INFO]: Processing request: [a28d5700-1fd0-4420-b438-47d1c1723c71] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:17 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:17 [ERROR]: invalid signature
+2025-04-03 22:27:17 [ERROR]: invalid signature
+2025-04-03 22:27:17 [INFO]: Processed request: a28d5700-1fd0-4420-b438-47d1c1723c71 STATUS:200
+2025-04-03 22:27:21 [INFO]: Processing request: [939da124-e0da-4783-a3c6-e512051b4090] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:21 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:21 [ERROR]: invalid signature
+2025-04-03 22:27:21 [ERROR]: invalid signature
+2025-04-03 22:27:21 [INFO]: Processed request: 939da124-e0da-4783-a3c6-e512051b4090 STATUS:200
+2025-04-03 22:27:23 [INFO]: Processing request: [e1eeaedd-735c-44ee-a3c6-56bf0f3b2d11] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:23 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:23 [ERROR]: invalid signature
+2025-04-03 22:27:23 [ERROR]: invalid signature
+2025-04-03 22:27:23 [INFO]: Processed request: e1eeaedd-735c-44ee-a3c6-56bf0f3b2d11 STATUS:200
+2025-04-03 22:27:25 [INFO]: Processing request: [4ea52e2f-0085-4fe8-9d41-bf01688392b5] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:27:25 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:27:25 [ERROR]: invalid signature
+2025-04-03 22:27:25 [ERROR]: invalid signature
+2025-04-03 22:27:25 [INFO]: Processed request: 4ea52e2f-0085-4fe8-9d41-bf01688392b5 STATUS:200
+2025-04-03 22:27:44 [INFO]: Processing request: [f2b3a53c-e396-4753-bbb5-025ebc889afd] GET /logout {}
+2025-04-03 22:27:44 [ERROR]: invalid signature
+2025-04-03 22:27:44 [ERROR]: invalid signature
+2025-04-03 22:27:44 [INFO]: Processed request: f2b3a53c-e396-4753-bbb5-025ebc889afd STATUS:200
+2025-04-03 22:29:48 [INFO]: Processing request: [de7f0df9-ca81-4457-8410-f42e602a565c] GET /logout {}
+2025-04-03 22:29:48 [ERROR]: invalid signature
+2025-04-03 22:29:48 [ERROR]: invalid signature
+2025-04-03 22:29:48 [INFO]: Processed request: de7f0df9-ca81-4457-8410-f42e602a565c STATUS:200
+2025-04-03 22:29:51 [INFO]: Processing request: [7084766c-e8da-408c-ba34-6e1c5519d47b] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:29:51 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:29:51 [ERROR]: Unauthorized
+2025-04-03 22:29:51 [DEBUG]: res.statusCode
+2025-04-03 22:29:51 [INFO]: Processed request: 7084766c-e8da-408c-ba34-6e1c5519d47b STATUS:401
+2025-04-03 22:29:55 [INFO]: Processing request: [5e90d6e0-fbd4-4d33-b89d-424632db545b] POST /login {}
+2025-04-03 22:29:55 [INFO]: Processed request: 5e90d6e0-fbd4-4d33-b89d-424632db545b STATUS:200
+2025-04-03 22:29:58 [INFO]: Processing request: [6400c57d-6df6-4af3-bf35-6e88e4b0b037] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:29:58 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:29:58 [ERROR]: invalid signature
+2025-04-03 22:29:58 [ERROR]: invalid signature
+2025-04-03 22:29:58 [INFO]: Processed request: 6400c57d-6df6-4af3-bf35-6e88e4b0b037 STATUS:200
+2025-04-03 22:30:02 [INFO]: Processing request: [07d050d0-d6bb-4e6e-8bde-0ed0ea94ed34] GET /logout {}
+2025-04-03 22:30:02 [ERROR]: invalid signature
+2025-04-03 22:30:02 [ERROR]: invalid signature
+2025-04-03 22:30:02 [INFO]: Processed request: 07d050d0-d6bb-4e6e-8bde-0ed0ea94ed34 STATUS:200
+2025-04-03 22:30:04 [INFO]: Processing request: [df64c403-28a9-45af-b454-ee425ae6f6bb] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:30:04 [DEBUG]: Checking refresh token cookie
+2025-04-03 22:30:04 [ERROR]: Unauthorized
+2025-04-03 22:30:04 [DEBUG]: res.statusCode
+2025-04-03 22:30:04 [INFO]: Processed request: df64c403-28a9-45af-b454-ee425ae6f6bb STATUS:401
+2025-04-03 22:31:33 [INFO]: Processing request: [834a8c5a-1bb1-46cf-9869-519ef82e63ff] GET /loans/expired {}
+2025-04-03 22:31:33 [ERROR]: Unauthorized
+2025-04-03 22:31:33 [DEBUG]: res.statusCode
+2025-04-03 22:31:33 [INFO]: Processed request: 834a8c5a-1bb1-46cf-9869-519ef82e63ff STATUS:401
+2025-04-03 22:31:38 [INFO]: Processing request: [c1756285-38da-4260-b03d-7516f775018c] POST /login {}
+2025-04-03 22:31:38 [INFO]: Processed request: c1756285-38da-4260-b03d-7516f775018c STATUS:200
+2025-04-03 22:31:42 [INFO]: Processing request: [e543a408-1600-4e56-a1af-e2880a2be493] GET /loans/expired {}
+2025-04-03 22:31:42 [ERROR]: Unauthorized
+2025-04-03 22:31:42 [DEBUG]: res.statusCode
+2025-04-03 22:31:42 [INFO]: Processed request: e543a408-1600-4e56-a1af-e2880a2be493 STATUS:401
+2025-04-03 22:31:44 [INFO]: Processing request: [1d0f1464-f5fe-40cb-99df-23f3512dd34d] GET /loans/expired {}
+2025-04-03 22:31:44 [ERROR]: Unauthorized
+2025-04-03 22:31:44 [DEBUG]: res.statusCode
+2025-04-03 22:31:44 [INFO]: Processed request: 1d0f1464-f5fe-40cb-99df-23f3512dd34d STATUS:401
+2025-04-03 22:32:49 [INFO]: Processing request: [f4dee235-5700-4166-ad20-2b07f31f0a69] GET /loans/expired {}
+2025-04-03 22:32:49 [ERROR]: invalid signature
+2025-04-03 22:32:49 [ERROR]: invalid signature
+2025-04-03 22:32:49 [INFO]: Processed request: f4dee235-5700-4166-ad20-2b07f31f0a69 STATUS:200
+2025-04-03 22:32:59 [INFO]: Processing request: [4b5b2a79-ebc1-48c7-95c5-73a1376bd119] DELETE /loan/570321/delete {}
+2025-04-03 22:32:59 [ERROR]: Unauthorized
+2025-04-03 22:32:59 [DEBUG]: res.statusCode
+2025-04-03 22:32:59 [INFO]: Processed request: 4b5b2a79-ebc1-48c7-95c5-73a1376bd119 STATUS:401
+2025-04-03 22:33:20 [INFO]: Processing request: [7d8fd83a-5fcd-4135-a6e0-87bcaaac03a6] DELETE /loan/570321/delete {}
+2025-04-03 22:33:20 [ERROR]: invalid signature
+2025-04-03 22:33:20 [INFO]: Processed request: 7d8fd83a-5fcd-4135-a6e0-87bcaaac03a6 STATUS:200
+2025-04-03 22:55:02 [INFO]: Processing request: [a7dcfed6-20d4-44ec-9ce7-ebbfebb33913] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 22:55:02 [ERROR]: invalid signature
+2025-04-03 22:55:02 [ERROR]: invalid signature
+2025-04-03 22:55:02 [ERROR]: jwt expired
+2025-04-03 22:55:02 [ERROR]: Unauthorized
+2025-04-03 22:55:02 [DEBUG]: res.statusCode
+2025-04-03 22:55:02 [INFO]: Processed request: a7dcfed6-20d4-44ec-9ce7-ebbfebb33913 STATUS:200
+2025-04-03 23:01:30 [INFO]: Processing request: [4ece5121-da0b-483b-873d-f2ee5e37ea7d] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:01:30 [ERROR]: invalid signature
+2025-04-03 23:01:30 [ERROR]: invalid signature
+2025-04-03 23:01:30 [ERROR]: jwt expired
+2025-04-03 23:01:30 [ERROR]: Unauthorized
+2025-04-03 23:01:30 [DEBUG]: res.statusCode
+2025-04-03 23:01:30 [INFO]: Processed request: 4ece5121-da0b-483b-873d-f2ee5e37ea7d STATUS:200
+2025-04-03 23:16:18 [INFO]: Processing request: [08a7805f-4fa3-4f9d-9cf0-8f204c138a78] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:16:18 [ERROR]: invalid signature
+2025-04-03 23:16:18 [ERROR]: invalid signature
+2025-04-03 23:16:18 [ERROR]: jwt expired
+2025-04-03 23:16:18 [ERROR]: Unauthorized
+2025-04-03 23:16:18 [DEBUG]: res.statusCode
+2025-04-03 23:16:18 [INFO]: Processed request: 08a7805f-4fa3-4f9d-9cf0-8f204c138a78 STATUS:200
+2025-04-03 23:17:19 [INFO]: Processing request: [0ca663e6-efb0-4bef-ba93-2a59697c73a2] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:17:19 [ERROR]: invalid signature
+2025-04-03 23:17:19 [ERROR]: invalid signature
+2025-04-03 23:17:19 [ERROR]: jwt expired
+2025-04-03 23:17:19 [ERROR]: Unauthorized
+2025-04-03 23:17:19 [DEBUG]: res.statusCode
+2025-04-03 23:17:19 [INFO]: Processed request: 0ca663e6-efb0-4bef-ba93-2a59697c73a2 STATUS:200
+2025-04-03 23:18:02 [INFO]: Processing request: [38c31bb9-a060-4b25-8584-b8162fe8e2b2] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:18:02 [ERROR]: invalid signature
+2025-04-03 23:18:02 [ERROR]: invalid signature
+2025-04-03 23:18:02 [ERROR]: jwt expired
+2025-04-03 23:18:02 [ERROR]: Unauthorized
+2025-04-03 23:18:02 [DEBUG]: res.statusCode
+2025-04-03 23:18:02 [INFO]: Processed request: 38c31bb9-a060-4b25-8584-b8162fe8e2b2 STATUS:200
+2025-04-03 23:20:18 [INFO]: Processing request: [e20d40e0-5072-4e36-89f6-74388219f78a] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:20:18 [ERROR]: invalid signature
+2025-04-03 23:20:18 [ERROR]: invalid signature
+2025-04-03 23:20:18 [ERROR]: jwt expired
+2025-04-03 23:20:18 [INFO]: Processed request: e20d40e0-5072-4e36-89f6-74388219f78a STATUS:200
+2025-04-03 23:20:27 [INFO]: Processing request: [73b54166-5e1c-4f37-b24d-657934dcc5c3] GET /logout {}
+2025-04-03 23:20:27 [ERROR]: invalid signature
+2025-04-03 23:20:27 [ERROR]: invalid signature
+2025-04-03 23:20:27 [ERROR]: jwt expired
+2025-04-03 23:20:27 [INFO]: Processed request: 73b54166-5e1c-4f37-b24d-657934dcc5c3 STATUS:200
+2025-04-03 23:20:30 [INFO]: Processing request: [6935fba2-fa79-4918-8020-bdd09cc267b4] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:20:30 [ERROR]: Unauthorized
+2025-04-03 23:20:30 [DEBUG]: res.statusCode
+2025-04-03 23:20:30 [INFO]: Processed request: 6935fba2-fa79-4918-8020-bdd09cc267b4 STATUS:401
+2025-04-03 23:21:32 [INFO]: Processing request: [56d1dd58-906e-41d2-9604-2ea73084cbc9] POST /login {}
+2025-04-03 23:21:32 [INFO]: Processed request: 56d1dd58-906e-41d2-9604-2ea73084cbc9 STATUS:200
+2025-04-03 23:21:38 [INFO]: Processing request: [22549a59-50b0-4eff-a27b-1d306e06f04a] GET /loans/expired {}
+2025-04-03 23:21:38 [ERROR]: invalid signature
+2025-04-03 23:21:38 [ERROR]: invalid signature
+2025-04-03 23:21:38 [INFO]: Processed request: 22549a59-50b0-4eff-a27b-1d306e06f04a STATUS:200
+2025-04-03 23:21:43 [INFO]: Processing request: [c0e8abdd-9904-43d2-bf37-1938b6f4c5e6] DELETE /loan/570321/delete {}
+2025-04-03 23:21:43 [ERROR]: invalid signature
+2025-04-03 23:21:43 [INFO]: Processed request: c0e8abdd-9904-43d2-bf37-1938b6f4c5e6 STATUS:200
+2025-04-03 23:24:17 [INFO]: Processing request: [5114cd82-cd04-40f2-96f4-2d8401c21299] DELETE /loan/570321/delete {}
+2025-04-03 23:24:17 [ERROR]: invalid signature
+2025-04-03 23:24:17 [INFO]: Processed request: 5114cd82-cd04-40f2-96f4-2d8401c21299 STATUS:200
+2025-04-03 23:38:20 [INFO]: Processing request: [5c1695f7-ad95-4a52-aff7-f6bbba92214a] DELETE /loan/570321/delete {}
+2025-04-03 23:38:20 [ERROR]: invalid signature
+2025-04-03 23:38:20 [DEBUG]: res.statusCode
+2025-04-03 23:38:20 [INFO]: Processed request: 5c1695f7-ad95-4a52-aff7-f6bbba92214a STATUS:200
+2025-04-03 23:39:13 [INFO]: Processing request: [995097d8-badd-41c2-9e2f-ab0b8df4731a] POST /login {}
+2025-04-03 23:39:13 [INFO]: Processed request: 995097d8-badd-41c2-9e2f-ab0b8df4731a STATUS:200
+2025-04-03 23:39:17 [INFO]: Processing request: [89852816-0821-4f3b-8f78-64b5b7a8103e] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:39:17 [ERROR]: invalid signature
+2025-04-03 23:39:17 [DEBUG]: res.statusCode
+2025-04-03 23:39:17 [INFO]: Processed request: 89852816-0821-4f3b-8f78-64b5b7a8103e STATUS:200
+2025-04-03 23:43:00 [INFO]: Processing request: [71ecad0a-c669-4559-baeb-78ac8f4388c5] DELETE /loan/570321/delete {}
+2025-04-03 23:43:00 [ERROR]: invalid signature
+2025-04-03 23:43:00 [DEBUG]: res.statusCode
+2025-04-03 23:43:00 [INFO]: Processed request: 71ecad0a-c669-4559-baeb-78ac8f4388c5 STATUS:200
+2025-04-03 23:45:52 [INFO]: Processing request: [7a3a493a-c43c-4377-8f67-38a9aef9dd46] DELETE /loan/570321/delete {}
+2025-04-03 23:45:52 [INFO]: Processed request: 7a3a493a-c43c-4377-8f67-38a9aef9dd46 STATUS:200
+2025-04-03 23:47:07 [INFO]: Processing request: [5fd759c0-c1f0-49ea-96c2-a8dcf039a1ff] DELETE /loan/570321/delete {}
+2025-04-03 23:47:07 [ERROR]: Unauthorized
+2025-04-03 23:47:07 [DEBUG]: res.statusCode
+2025-04-03 23:47:07 [INFO]: Processed request: 5fd759c0-c1f0-49ea-96c2-a8dcf039a1ff STATUS:200
+2025-04-03 23:47:12 [INFO]: Processing request: [b1e606fc-938c-485e-b79d-078cfa70afb6] GET /loans?status=pending,active {"status":"pending,active"}
+2025-04-03 23:47:12 [INFO]: Processed request: b1e606fc-938c-485e-b79d-078cfa70afb6 STATUS:200
+2025-04-03 23:47:15 [INFO]: Processing request: [e5702611-b79c-4110-abae-2e6ca423d5bf] DELETE /loan/570321/delete {}
+2025-04-03 23:47:15 [ERROR]: Unauthorized
+2025-04-03 23:47:15 [DEBUG]: res.statusCode
+2025-04-03 23:47:15 [INFO]: Processed request: e5702611-b79c-4110-abae-2e6ca423d5bf STATUS:200

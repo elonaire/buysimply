@@ -43,7 +43,7 @@ export function login(req: Request, res: Response, next: NextFunction) {
     let refreshToken = jwt.sign({ sub: staff.id, role: roleUpperCase }, roleSecretKey, { expiresIn: '7d' });
 
     // set refresh token in cookie
-    res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true });
+    res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true, sameSite: 'strict', expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) });
 
     res.json({
       accessToken,

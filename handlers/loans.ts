@@ -28,13 +28,9 @@ export function getLoans(req: Request, res: Response, next: NextFunction) {
   try {
     let query = req.query as LoanQueryParams;
 
-    if (!req.authMetadata) {
-      throw new Error("Unauthorized");
-    }
-
     let loans = loansData;
 
-    if (req.authMetadata.role == Role.STAFF) {
+    if (req.authMetadata?.role === Role.STAFF) {
       // filter out totalLoan field
       loans.forEach((loan) => {
         delete loan.applicant.totalLoan;
@@ -70,6 +66,10 @@ export function getExpiredLoans(req: Request, res: Response, next: NextFunction)
 
 export function deleteLoan(req: Request, res: Response, next: NextFunction) {
   try {
+    if (req.authMetadata?.role !== Role.ADMIN) {
+      throw new Error("Unauthorized");
+    }
+
     let loanId = req.params["loanId"];
 
     let loanIndex = loansData.findIndex((loan) => loan.id === loanId);
