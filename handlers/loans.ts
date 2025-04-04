@@ -66,7 +66,7 @@ export function getExpiredLoans(req: Request, res: Response, next: NextFunction)
 
 export function deleteLoan(req: Request, res: Response, next: NextFunction) {
   try {
-    if (req.authMetadata?.role !== Role.ADMIN) {
+    if (req.authMetadata?.role !== Role.SUPERADMIN) {
       throw new Error("Unauthorized");
     }
 
