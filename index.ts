@@ -15,6 +15,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import logger from './logger';
 import { v4 as uuidv4 } from 'uuid';
+import { rateLimiter } from './middleware/rateLimiter';
 
 //For env File
 dotenv.config();
@@ -22,12 +23,13 @@ dotenv.config();
 const app: Application = express();
 const port = process.env.PORT;
 
+app.use(cors());
+app.use(rateLimiter);
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
-app.use(cors());
 app.use((req: Request, res: Response, next: NextFunction) => {
   let requestId = uuidv4();
   logger.info(`Processing request: [${requestId}] ${req.method} ${req.url} ${JSON.stringify(req.query)}`);
